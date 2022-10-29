@@ -22,9 +22,9 @@ function Understanding() {
         event.preventDefault();
 
             if(understandingInput === 0 ) {
-                alert(`Please let us know your level of understanding`)
+                alert(`Please let us know your level of understanding`) // user must enter value into input
             }
-
+            //once they have entered a value then it will dispatch
             else if(understandingInput > 0) {
                 dispatch({
                     type: 'SET_UNDERSTANDING',

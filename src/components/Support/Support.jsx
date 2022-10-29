@@ -22,9 +22,9 @@ function Support() {
         event.preventDefault();
        
         if(supportInput === 0 ) {
-            alert(`Please let us know how supported you are feeling`)
+            alert(`Please let us know how supported you are feeling`) // user must enter value into input
         }
-        
+        //once they have entered a value then it will dispatch
         else if (supportInput > 0) {
             dispatch({
                 type: 'SET_SUPPORT',

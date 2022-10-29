@@ -13,7 +13,7 @@ function Feeling() {
 
     //handle number input from client and save to local state
     const handleInputChange = (event) => {
-        setFeelingInput(Number(event.target.value))
+        setFeelingInput(Number(event.target.value)) 
     }
 
         console.log('feeling input is ', feelingInput);
@@ -22,9 +22,9 @@ function Feeling() {
     const submit = (event) => {
         event.preventDefault();
             if(feelingInput === 0 ){
-                alert(`Please let us know how you're feeling`)
+                alert(`Please let us know how you're feeling`) // user must enter value into input
             }
-            
+            //once they have entered a value then it will dispatch
             else if(feelingInput > 0) {
                 dispatch({
                     type: 'SET_FEELING',

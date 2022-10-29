@@ -4,6 +4,10 @@ function StartSurvey() {
 
     const history = useHistory();
 
+    // go to feeling page
+    const startSurvey =  () => {
+        history.push('/feeling')
+    }
     return (
         <>
         <header className='App-header'>
@@ -14,7 +18,7 @@ function StartSurvey() {
             <h3>Good work today!</h3>
                 <h4>let us know how you're doing.</h4>
                 <button
-                    // onClick={history.push('/feeling')}
+                onClick={startSurvey}
                 >Start Survey</button>
         </div>
         </>

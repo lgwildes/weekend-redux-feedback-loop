@@ -1,5 +1,5 @@
 import { useHistory } from 'react-router-dom';
-import { useSelector,  } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 
 function Review({submitForm}) {
@@ -9,7 +9,7 @@ function Review({submitForm}) {
     const support = useSelector(store => store.support);
     const comment = useSelector(store => store.comments)
 
-   
+   const dispatch = useDispatch();
     const history = useHistory();
 
     const handleSubmit = () => {
@@ -20,6 +20,7 @@ function Review({submitForm}) {
             comments: comment,
 
         })
+        
         history.push('/success')
     }
 
