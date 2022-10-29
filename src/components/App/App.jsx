@@ -13,7 +13,23 @@ import Review from '../Review/Review';
 import Success from '../Success/Success';
 
 
+
 function App() {
+  // feedback is the data from Review.jsx that is pulled from redux
+  const submitForm = (feedback) => {
+
+    axios({
+      method: 'POST',
+      url: '/feedback',
+      data: feedback
+    })
+      .then((response) => {
+        console.log('/feedback POST success!', response)
+      })
+      .catch((error) => {
+        console.log('ERROR in /feedback POST ', error);
+      })
+  }
 
   return (
     <div className='App'>
@@ -41,7 +57,8 @@ function App() {
         </Route>
 
         <Route exact path='/review'>
-          <Review />
+          <Review
+            submitForm={submitForm} />
         </Route>
 
         <Route exact path='/success'>
