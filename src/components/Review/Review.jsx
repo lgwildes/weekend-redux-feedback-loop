@@ -26,16 +26,17 @@ function Review({submitForm}) {
 
     return (
         <>
-        <h2>Review Your Feedback</h2>
-            <h3>Feelings: {feeling} </h3>
-            <h3>Understanding: {undestanding}</h3>
-            <h3>Support: {support} </h3>
-            <h3>Comments: {comment} </h3>
+        <div className='review-info'>
+            <h2>Review Your Feedback</h2>
+                <h3>Feelings: <span className='feedback'> {feeling} </span></h3>
+                <h3>Understanding: <span className='feedback'> {undestanding} </span></h3>
+                <h3>Support: <span className='feedback'> {support} </span> </h3>
+                <h3>Comments: <span className='feedback'> {comment} </span></h3>
 
-            <button
-            onClick={handleSubmit}
-            >SUBMIT</button>
-            
+                <button
+                onClick={handleSubmit}
+                >SUBMIT</button>
+        </div>
         </>
     )
 }

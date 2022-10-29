@@ -46,7 +46,9 @@ function Feeling() {
             <h1 className='App-title'>Feedback!</h1>
             <h4>Don't forget it!</h4>
         </header>
-        <form onSubmit={submit}>
+        <form 
+        onSubmit={submit}
+        className="feedback-container">
             <h3>How are you feeling today?</h3>
             <label>feeling?</label>
                 <input 

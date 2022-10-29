@@ -42,7 +42,9 @@ function Understanding() {
             <h1 className='App-title'>Feedback!</h1>
             <h4>Don't forget it!</h4>
         </header>
-        <form onSubmit={submit}>
+        <form
+        className="feedback-container" 
+        onSubmit={submit}>
             <h3>How well are you understanding the content?</h3>
             <label>understanding?</label>
                 <input 

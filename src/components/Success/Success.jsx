@@ -17,7 +17,7 @@ function Success() {
     }
     return(
         <>
-        <div>
+        <div className='success'>
             <h1>Thank you for your feedback!</h1>
             <button
             onClick={startOver}>Leave more feedback</button>

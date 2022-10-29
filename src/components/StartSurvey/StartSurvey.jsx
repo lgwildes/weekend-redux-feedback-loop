@@ -14,7 +14,7 @@ function StartSurvey() {
             <h1 className='App-title'>Feedback!</h1>
             <h4>Don't forget it!</h4>
         </header>
-        <div>
+        <div className="feedback-container">
             <h3>Good work today!</h3>
                 <h4>let us know how you're doing.</h4>
                 <button

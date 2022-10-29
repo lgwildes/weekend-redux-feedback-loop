@@ -36,14 +36,17 @@ function Comments() {
             <h1 className='App-title'>Feedback!</h1>
             <h4>Don't forget it!</h4>
         </header>
-        <form onSubmit={submit}>
+        <form 
+        className="feedback-container"
+        onSubmit={submit}>
             <h3>Any comments you want to leave?</h3>
                 <label>comments</label>
-                <input 
+                <textarea
                     onChange={handleInputChange}
                     type="text" 
-                    className="ratingInput" 
-                    />
+                    className="comment-input" 
+                    >
+                    </textarea>
                 <button
                     type='submit'
                     >Next
