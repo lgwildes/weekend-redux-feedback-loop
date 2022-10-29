@@ -1,0 +1,21 @@
+[] set up router for axios requests
+[] set up Router in app.jsx
+[] set up redux store
+[] components
+        [] next button useHistory to push to next page
+        [] alert for missing input content
+    [] Feeling
+    [] Understanding 
+    [] Support
+    [] Comments
+    [] Review
+        [] pull all current state from Redux store 
+        [] submit button POSTS to server/database
+    [] Success!
+        [] Leave New Feedback button resets survey from beginning
+        [] Clear redux store state
+[] axios requests on app.jsx
+[] axios endpoints on feedback.router.js
+
+
+
