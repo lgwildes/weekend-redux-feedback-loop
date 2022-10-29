@@ -1,15 +1,15 @@
 [x] set up routes for axios requests
-[] set up Router in app.jsx
+[x] set up Router in app.jsx
 [x] install redux
 [x] set up redux store
 [] components
         [] next button useHistory to push to next page
         [] alert for missing input content
-    [] Feeling
-    [] Understanding 
-    [] Support
-    [] Comments
-    [] Review
+    [x] Feeling
+    [x] Understanding 
+    [x] Support
+    [x] Comments
+    [x] Review
         [] pull all current state from Redux store 
         [] submit button POSTS to server/database
     [] Success!
